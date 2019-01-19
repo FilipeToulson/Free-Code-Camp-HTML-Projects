@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form</p>
+
+    <div id="surveyFormDiv">
+      <form id="survey-form" action="submit">
+        <div class="formElements" id="nameDiv">
+          <label id="name-label" for="name">Name:</label>
+          <input id="name" name="name" type="text" placeholder="Enter a name" required>
+        </div>
+        <div class="formElements" id="emailDiv">
+          <label id="email-label" for="email">Email:</label>
+          <input id="email" name="email" type="email" placeholder="Enter an email" required>
+        </div>
+        <div class="formElements" id="numberDiv">
+          <label id="number-label" for="number">Number:</label>
+          <input id="number" name="number" type="number" min="0" max="100" placeholder="Enter a number between 0 and 100">
+        </div>
+
+        <div class="formElements" id="dorpDownDiv">
+          <select id="dropdown">
+            <option value="A">Option A</option>
+            <option value="B">Option B</option>
+            <option value="C">Option C</option>
+            <option value="D">Option D</option>
+          </select>
+        </div>
+
+        <div class="formElements" id="radioDiv">
+          <label for="radioOptionA">
+            <input id="radioOptionA" name="radioOptions" type="radio" value="A">Option A
+          </label>
+          <label for="radioOptionB">
+            <input id="radioOptionB" name="radioOptions" type="radio" value="B">Option B
+          </label>
+        </div>
+
+        <div class="formElements" id="checkBoxDiv">
+          <label for="checkBoxOptionA">
+            <input id="checkBoxOptionA" name="checkBoxOptions" type="checkbox" value="A">Option A
+          </label>
+          <label for="checkBoxOptionB">
+            <input id="checkBoxoOptionB" name="checkBoxOptions" type="checkbox" value="B">Option B
+          </label>
+          <label for="checkBoxOptionC">
+            <input id="checkBoxOptionC" name="checkBoxOptions" type="checkbox" value="C">Option C
+          </label>
+          <label for="checkBoxOptionD">
+            <input id="checkBoxoOptionD" name="checkBoxOptions" type="checkbox" value="D">Option D
+          </label>
+        </div>
+
+        <div class="formElements" id="textAreaDiv">
+          <textarea rows="5" cols="50" placeholder="Enter addidtional comments here..."></textarea>
+        </div>
+        
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,23 @@
+#title {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+}
+
+#surveyFormDiv {
+  margin: auto;
+  padding: 10px;
+  width: min-content;
+  flex-direction: column;
+  background: lightgrey;
+}
+
+.formElements {
+  padding-bottom: 10px;
+}
+
+#number {
+  width: 200px;
+}
