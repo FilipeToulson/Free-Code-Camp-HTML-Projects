@@ -1,0 +1,127 @@
+:root {
+  --video-width: 966px;
+  --video-height: 543px;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --video-width: 483px;
+    --video-height: 272px;
+  }
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: lightblue;
+  align-items: center;
+}
+
+#header-img {
+  width: 200px;
+  margin: 10px;
+}
+
+#nav-bar {
+  float: right;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+#nav-bar a {
+  font-size: 22px;
+  padding-left: 40px;
+}
+
+main {
+  margin-top: 134px;
+}
+
+section {
+  padding-top: 50px;
+}
+
+#form-title {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#form-div {
+  display: flex;
+  margin: auto;
+  padding-top: 10px;
+  width: min-content;
+}
+
+.form-element-div {
+  width: min-content;
+}
+
+.section-title {
+  text-align: center;
+}
+
+#features {
+  width: 550px;
+  margin: auto;
+}
+
+.feature-div {
+  display: flex;
+}
+
+.features-description {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.features-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#q-m-icon {
+  background-color: gold;
+}
+
+#f-s-icon {
+  background-color: red;
+}
+
+#video {
+  display: block;
+  margin: auto;
+  width: var(--video-width);
+  height: var(--video-height);
+}
+
+#pricing-div {
+  display: flex;
+  margin: auto;
+  width: min-content;
+}
+
+.price-option-div {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.price-option-div h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+#price-option-div-1 {
+  background-color: #cd7f32;
+}
+
+#price-option-div-2 {
+  background-color: silver;
+}
+
+#price-option-div-3 {
+  background-color: gold;
+}
