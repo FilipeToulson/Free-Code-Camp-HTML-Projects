@@ -1,7 +1,7 @@
 # Free Code Camp HTML Projects
 ### About
 These are projects I have completed to obtain the Responsive Web Design Certification at Free Code Camp, which can be
-found here [learn.freecodecamp.org](https://learn.freecodecamp.org/).
+found here [learn.freecodecamp.org](https://learn.freecodecamp.org/). My profile can be found here [www.freecodecamp.org/filipe-toulson](https://www.freecodecamp.org/filipe-toulson).
 
 Each project involves implementing a website according to given requirements. Each website is checked to see if it meets
 the requirements, using Free Code Camp's testing script, and then submitted.
