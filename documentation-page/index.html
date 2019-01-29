@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>More Control Flow Tools</header>
+      <div>
+        <a href="#if_Statements" class="nav-link">if Statements</a>
+        <a href="#for_Statements" class="nav-link">for Statements</a>
+        <a href="#The_range()_Function" class="nav-link">The range() Function</a>
+        <a href="#pass_Statements" class="nav-link">pass Statements</a>
+        <a href="#Defining_Functions" class="nav-link">Defining Functions</a>
+        <a href="#Intermezzo:_Coding_Style" class="nav-link">Intermezzo: Coding Style</a>
+      </div>
+    </nav>
+
+    <main id="main-doc"> 
+      <section class="main-section" id="if_Statements">
+        <header>if Statements</header>
+        <p>Perhaps the most well-known statement type is the if statement. For example:</p>
+        <code>>>> x = int(input("Please enter an integer: "))
+  Please enter an integer: 42
+  >>> if x < 0:
+  ...     x = 0
+  ...     print('Negative changed to zero')
+  ... elif x == 0:
+  ...     print('Zero')
+  ... elif x == 1:
+  ...     print('Single')
+  ... else:
+  ...     print('More')
+  ...
+  More</code>
+        <p>There can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for ‘else if’, and is useful to avoid excessive indentation. An if … elif … elif … sequence is a substitute for the switch or case statements found in other languages.</p>
+      </section>
+    
+      <section class="main-section" id="for_Statements">
+        <header>for Statements</header>
+        <p>The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both the iteration step and halting condition (as C), Python’s for statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence. For example (no pun intended):</p>
+        <code>>>> # Measure some strings:
+  ... words = ['cat', 'window', 'defenestrate']
+  >>> for w in words:
+  ...     print(w, len(w))
+  ...
+  cat 3
+  window 6
+  defenestrate 12</code>
+        <p>If you need to modify the sequence you are iterating over while inside the loop (for example to duplicate selected items), it is recommended that you first make a copy. Iterating over a sequence does not implicitly make a copy.</p>
+      </section>
+    
+      <section class="main-section" id="The_range()_Function">
+        <header>The range() Function</header>
+        <p>If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy. It generates arithmetic progressions:</p>
+        <code>>>> for i in range(5):
+  ...     print(i)
+  ...
+  0
+  1
+  2
+  3
+  4</code>
+        <p>The given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for items of a sequence of length 10.</p>
+      </section>
+    
+      <section class="main-section" id="pass_Statements">
+        <header>pass Statements</header>
+        <p>The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action. For example:</p>
+        <code>>>> while True:
+  ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)
+  ...</code>
+        <p>This is commonly used for creating minimal classes.</p>
+      </section>
+    
+      <section class="main-section" id="Defining_Functions">
+        <header>Defining Functions</header>
+        <p>We can create a function that writes the Fibonacci series to an arbitrary boundary:</p>
+        <code>>>> def fib(n):    # write Fibonacci series up to n
+  ...     """Print a Fibonacci series up to n."""
+  ...     a, b = 0, 1
+  ...     while a < n:
+  ...         print(a, end=' ')
+  ...         a, b = b, a+b
+  ...     print()
+  ...
+  >>> # Now call the function we just defined:
+  ... fib(2000)
+  0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597</code>
+        <p>The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.</p>
+      </section>
+      
+      <section class="main-section" id="Intermezzo:_Coding_Style">
+        <header>Intermezzo: Coding Style</header>
+        <p>Now that you are about to write longer, more complex pieces of Python, it is a good time to talk about coding style. Most languages can be written (or more concise, formatted) in different styles; some are more readable than others. Making it easy for others to read your code is always a good idea, and adopting a nice coding style helps tremendously for that.For Python, PEP 8 has emerged as the style guide that most projects adhere to; it promotes a very readable and eye-pleasing coding style. Every Python developer should read it at some point; here are the most important points extracted for you:</p>
+        <ul>
+          <li>Use 4-space indentation, and no tabs.</li>
+          <li>Wrap lines so that they don’t exceed 79 characters.</li>
+          <li>Use blank lines to separate functions and classes, and larger blocks of code inside functions.</li>
+          <li>When possible, put comments on a line of their own.</li>
+          <li>Use docstrings.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
