@@ -29,3 +29,8 @@ This project can be found here: [codepen.io/filipetoulson/pen/ebbQbv](https://co
 This involved creating a documentation page. I used some of Python's documentation to fill the web page out.
 
 This project can be found here: [codepen.io/filipetoulson/pen/jdOYxZ](https://codepen.io/filipetoulson/pen/jdOYxZ)
+
+#### Personal Portfolio
+This involved creating a portfolio page, however, I did not make it for myself.
+
+This project can be found here: [codepen.io/filipetoulson/pen/zeKKJv](https://codepen.io/filipetoulson/pen/zeKKJv)
